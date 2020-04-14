@@ -1,0 +1,63 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  // prevents post seperator from creating horizontal scrollbar
+  overflow-x: hidden;
+}
+
+.site-header {
+  border-top: none;
+}
+
+.site-title, .site-title:visited {
+  color: #ccc;
+  font-size: 60pt;
+  font-family: "Droid Sans";
+  font-weight: 700;
+  line-height: 60pt;
+  letter-spacing: -0.1em;
+}
+
+.site-title {
+  transition-duration: 0.3s;
+  transition-property: transform, color;
+
+  &:hover {
+    text-decoration: none;
+    transform: skewX(-10deg);
+
+    &::first-letter {
+      color: #666;
+    }
+  }
+}
+
+.site-nav {
+  line-height: 60pt;
+
+  .page-link {
+    color: #666;
+
+    &:hover {
+      color: #111;
+    }
+  }
+}
+
+.post-list > li {
+  &::after {
+    content: "";
+    display: block;
+    margin: 150px -20000px;
+    border-top: 2px solid #ccc;
+    border-bottom: 40px solid #eee;
+  }
+
+  &:last-child::after {
+    margin: 75px 0;
+    border: none;
+  }
+}

@@ -1,0 +1,10 @@
+makeSearchCommand({
+  name: "Steam",
+  homepage: "http://blog.bombatower.com",
+  author: { name: "Jimmy Berry", email: "jimmy@boombatower.com"},
+  contributors: ["Jimmy Berry"],
+  license: "GPL",
+  url: "http://steamcommunity.com/id/{QUERY}",
+  icon: "http://steamcommunity.com/favicon.ico",
+  description: "Look up a person on steam."
+})

@@ -1,0 +1,31 @@
+title: boombatower
+description: |
+  A veriety of mostly technical topics.
+
+author: Jimmy Berry
+email: jimmy@boombatower.com
+github_username: boombatower
+rss: rss
+
+baseurl: ""
+
+theme: minima
+minima:
+  date_format: "%Y-%m-%d"
+permalink: /:year/:month/:day/:title
+
+paginate: 5
+paginate_path: /:num/
+
+google_analytics: true
+
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - CNAME
+  - LICENSE
+  - README.md
