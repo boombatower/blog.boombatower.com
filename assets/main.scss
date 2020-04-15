@@ -14,7 +14,7 @@ body {
 
 .site-title, .site-title:visited {
   color: #ccc;
-  font-size: 60pt;
+  font-size: 5em;
   font-family: "Droid Sans";
   font-weight: 700;
   line-height: 60pt;
@@ -51,7 +51,7 @@ body {
   &::after {
     content: "";
     display: block;
-    margin: 150px -20000px;
+    margin: 150px -50vw;
     border-top: 2px solid #ccc;
     border-bottom: 40px solid #eee;
   }
